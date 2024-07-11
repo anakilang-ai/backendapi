@@ -123,7 +123,7 @@ func Chat(respw http.ResponseWriter, req *http.Request, tokenmodel string) {
 
 	if bestLabel != "" {
 		// Load the dataset from local file
-		datasetFilePath := "../rf1.csv"
+		datasetFilePath := "./rf1.csv"
 		labelToQA, err := LoadDatasetLocal(datasetFilePath)
 		if err != nil {
 			utils.ErrorResponse(respw, req, http.StatusInternalServerError, "Internal Server Error", "server error: could not load dataset: "+err.Error())
