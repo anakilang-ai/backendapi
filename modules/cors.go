@@ -9,6 +9,7 @@ var Origins = []string{
 	"http://localhost:8080",
 	"http://127.0.0.1:5501",
 	"https://anakilang-ai.github.io",
+	"http://127.0.0.1:8080",
 }
 
 // Fungsi untuk memeriksa apakah origin diizinkan

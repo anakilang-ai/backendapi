@@ -8,9 +8,8 @@ import (
 
 func main() {
 	app := fiber.New()
-
-	// Define a fiber handler for "/WebHook"
-	app.Get("/WebHook", adaptor.HTTPHandlerFunc(routes.URL))
+	// Define a fiber handler for all requests
+	app.All("/*", adaptor.HTTPHandlerFunc(routes.URL))
 
 	port := ":8080"
 	app.Listen(port)
