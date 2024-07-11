@@ -1,7 +1,6 @@
 package main
 
 import (
-
 	"github.com/anakilang-ai/backend/routes"
 	"github.com/gofiber/adaptor/v2"
 	"github.com/gofiber/fiber/v2"
@@ -10,7 +9,7 @@ import (
 func main() {
 	app := fiber.New()
 
-	// Define a fiber handler that wraps the net/http handler
+	// Define a fiber handler for "/WebHook"
 	app.Get("/WebHook", adaptor.HTTPHandlerFunc(routes.URL))
 
 	port := ":8080"
