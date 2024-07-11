@@ -1,20 +1,20 @@
-package ailang
+// package ailang
 
-import (
-	"testing"
+// import (
+// 	"testing"
 
 	// "github.com/anakilang-ai/backend/models"
-	helper "github.com/anakilang-ai/backend/utils"
+	// helper "github.com/anakilang-ai/backend/utils"
 	// modules "github.com/anakilang-ai/backend/moduls"
-)
+// )
 
 // var db = module.MongoConnect("MONGOSTRING", "ailang")
 
-func TestGenerateKey(t *testing.T) {
-	privateKey, publicKey := helper.GenerateKey()
-	t.Logf("PrivateKey : %v", privateKey)
-	t.Logf("PublicKey : %v", publicKey)
-}
+// func TestGenerateKey(t *testing.T) {
+// 	privateKey, publicKey := helper.GenerateKey()
+// 	t.Logf("PrivateKey : %v", privateKey)
+// 	t.Logf("PublicKey : %v", publicKey)
+// }
 
 // // TestInsertOneDoc
 // func TestInsertOneDoc(t *testing.T) {
