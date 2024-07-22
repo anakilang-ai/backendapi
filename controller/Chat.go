@@ -29,7 +29,7 @@ func Chat(respw http.ResponseWriter, req *http.Request, tokenmodel string) {
 	client := resty.New()
 
 	// Hugging Face API URL dan token
-	apiUrl := modules.GetEnv("HUGGINGFACE_API_KEY")
+	apiUrl := modules.GetEnv("HUGGINGFACE_API_URL")
 	apiToken := "Bearer " + tokenmodel
 
 	var response *resty.Response
